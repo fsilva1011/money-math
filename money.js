@@ -72,6 +72,7 @@
         case "JPY":
             return separateThousands(integerValue(amount), ",");
 
+        case "BRL":
         case "EUR":
         case "GBP":
             return separateThousands(integerValue(amount), ".") + "," + amount.substr(-2);
